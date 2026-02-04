@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/src/globals.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>handposer-app</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+
+   
+    
+    <canvas id="poser_canvas"></canvas>
+
+    <div class="editor-ui-layer">
+        <div class="toolbar-container">
+            <button id="undo-btn" class="icon-btn"><img src="/undo.svg" alt="Undo"></button>
+            <button id="redo-btn" class="icon-btn"><img src="/redo.svg" alt="Redo"></button>
+            <button id="camera-btn" class="icon-btn"><img src="/camera.svg" alt="Camera"></button>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="gizmo-toolbar">
+            <button id="translate" class="gizmo-btn"><img src="/move.svg" alt="Move"></button>
+            <button id="rotate" class="gizmo-btn"><img src="/rotate.svg" alt="Rotate"></button>
+    </div>
+
+
+<div id="modal-1" class="modal animate-opacity">
+   <div class="modal-content">
+      <div class="modal-inner">
+         <span onclick="document.getElementById('modal-1').style.display='none'" class="modal-close">&times;</span>
+         <h4> WARNING !</h4>
+         <p>This web application is still in beta/development and may not function properly.</p>
+      </div> 
+   </div>
+</div>
+
+ <script type="module" src="/src/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,178 @@
+body { margin: 0; overflow: hidden; }
+
+/* Style for the canvas element */
+#poser_canvas {
+    display: block; /* Remove default inline behavior */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Container to ensure it stays on top */
+.editor-ui-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; 
+    z-index: 8;
+}
+
+.toolbar-container {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 21px;
+    gap: 36px;
+    pointer-events: auto; 
+
+   
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 310px;
+    height: 68px;
+
+    /* Styling from  Figma */
+    background: rgba(213, 213, 213, 0.2);
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0px 4px 36.5px rgba(0, 0, 0, 0.25);
+    border-radius: 69px;
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+
+
+.icon-btn {
+    width: 37px;
+    height: 37px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-btn:hover {
+    transform: scale(1.6);
+    opacity: 0.5;
+}
+
+.icon-btn:active {
+    transform: scale(1.4);
+}
+
+
+
+
+.gizmo-toolbar {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 30px;
+    pointer-events: auto; 
+
+    /* Figma Positioning - Adjusted for Top Left */
+    position: absolute;
+    width: 88px;
+    height: 202px;
+    left: 61px;
+    top: 300px;
+
+
+    /* Styling from  Figma Code */
+    background: rgba(170, 170, 170, 0.66);
+    backdrop-filter: blur(20px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0px 4px 36.5px rgba(0, 0, 0, 0.25);
+    border-radius: 193px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
+
+
+    
+}
+
+
+
+.gizmo-btn {
+    width: 54px;
+    height: 54px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.gizmo-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.gizmo-btn:hover {
+    transform: scale(1.6);
+    opacity: 0.5;
+}
+
+.gizmo-btn:active {
+    transform: scale(1.4);
+}
+
+
+.modal {
+	z-index: 10;
+	display: block;
+	padding-top: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.5);
+    
+    
+}
+
+
+.modal-content {
+	margin: auto;
+	background-color: #ffffffb2;
+	position: relative;
+	padding: 0;
+	outline: 0;
+	max-width: 600px;
+    backdrop-filter: blur(20px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0px 4px 36.5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
+}
+.modal-inner { padding: 20px 30px; }
+.modal-close {
+
+    cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	padding: 6px 10px;
+}
+.animate-opacity { animation: opac 0.8s }@keyframes opac{from{opacity:0} to{opacity:1}}
+
+
+
+

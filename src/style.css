@@ -23,15 +23,15 @@ body { margin: 0; overflow: hidden; }
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 12px 21px;
-    gap: 36px;
+    padding: 12px 12px;
+    gap: 28px;
     pointer-events: auto; 
 
    
     position: absolute;
     top: 30px;
     right: 30px;
-    width: 310px;
+    width: 200px;
     height: 68px;
 
     /* Styling from  Figma */

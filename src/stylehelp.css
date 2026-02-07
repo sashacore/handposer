@@ -1,0 +1,94 @@
+/* General Resets */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'Albert Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* Page Wrapper */
+.page-container {
+    width: 100%;
+    max-width: 1440px; 
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* The Help Bubble Header */
+.header-container {
+    align-self: center;
+    width: 221px;
+    height: 75px;
+    background: #CFCFCF;
+    border: 0.65px solid #000000;
+    box-shadow: 2.5px 3.9px 2.5px rgba(0, 0, 0, 0.25);
+    border-radius: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 31px;
+    font-weight: 400;
+    margin: 0;
+    color: #000000;
+}
+
+/* Section Styling */
+.control-section {
+    width: 100%;
+    max-width: 1300px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-decoration: underline; 
+}
+
+p {
+    font-size: 26px; 
+    line-height: 1.4;
+    margin: 5px 0;
+    color: #000000;
+}
+
+.description {
+    margin-top: 15px;
+}
+
+/* Image Placeholders */
+.image-box {
+    background-color: #d9d9d9; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 23px;
+    margin-top: 25px;
+    border: 1px solid #ccc; 
+}
+
+.vpgiz-sc { width: 186px; height: 165px; background-image: url('/vpgiz_sc.png'); }
+.torus-sc { width: 172px; height: 490px; background-image: url('/torus_sc.png'); }
+.toolbar-sc { width: 514px; height: 156px; background-image: url('/toolbar_sc.png'); }
+
+/* Gizmo Specific Layout */
+.gizmo-images {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.leftbar-sc { width: 174px; height: 351px; background-image: url('/lefbar_sc.png'); margin-top: 0; }
+.reddots-sc { width: 172px; height: 351px; background-image: url('/reddots_sc.png'); margin-top: 0; }
